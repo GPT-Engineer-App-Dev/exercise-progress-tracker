@@ -19,10 +19,12 @@ const Index = () => {
             <IconButton aria-label="Nutrition" icon={<FaAppleAlt />} size="lg" isRound />
             <Text mt={2}>Nutrition</Text>
           </Box>
-          <Box textAlign="center">
-            <IconButton aria-label="Progress" icon={<FaDumbbell />} size="lg" isRound />
-            <Text mt={2}>Progress</Text>
-          </Box>
+          <Link to="/progress-tracking">
+            <Box textAlign="center">
+              <IconButton as="span" aria-label="Progress" icon={<FaDumbbell />} size="lg" isRound />
+              <Text mt={2}>Progress</Text>
+            </Box>
+          </Link>
         </Flex>
         <Button as={Link} to="/workout-logging" colorScheme="teal" size="lg">Get Started</Button>
       </VStack>
